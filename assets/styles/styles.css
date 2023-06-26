@@ -1,0 +1,110 @@
+/* GENERIC */
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+/* ELEMENTS */
+
+body {
+    margin: 0;
+    padding: 8vw;
+}
+
+main {
+    margin-top: 50px;
+}
+
+section + section {
+    margin-top: 50px;
+}
+
+h1 {
+    margin: 0;
+}
+
+p {
+    line-height: 1.4;
+    margin: 5px 0 0;
+}
+
+input + button {
+    margin-left: 10px;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+li + li {
+    margin-top: 10px;
+}
+
+
+/* Exercice 1 */
+
+fieldset {
+    padding: 5vw;
+}
+
+input[type=file] {
+    margin-left: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* Exercice 2 */
+
+[data-js-exercice="2"] div {
+    padding-left: 30px;
+}
+
+
+/* Exercice 4 */
+
+.item {
+    padding : 5px;
+    border: 1px solid #CCC;
+    width: 200px;
+}
+
+.fleche {
+    display: inline-block;
+    height: 0px;
+    width: 0px;
+    margin-left: 10px;
+}
+
+.fleche--haut,
+.fleche--bas {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent; 
+}
+
+.fleche--haut:hover,
+.fleche--bas:hover {
+    cursor: pointer; 
+}
+
+.fleche--haut {
+    border-bottom: 15px solid #000;
+    margin-left: 60px;
+}
+
+.fleche--bas {
+    border-top: 15px solid #000;
+    margin-left: 15px;
+}
+
+.item:first-child .fleche--haut,
+.item:last-child .fleche--bas {
+    pointer-events: none;
+    visibility: hidden;
+}
